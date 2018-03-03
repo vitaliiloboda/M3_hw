@@ -1,7 +1,27 @@
 body {
-  font-family: 'Krona One', sans-serif;
+  font-family: 'Playfair Display', Arial, serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .articles-list-item-theme {
   font-family: 'Ubuntu', Arial, sans-serif;
+  color: #b4ad9e;
+  line-height: auto;
+}
+
+.articles-list-item-heading {
+  font-size: 30px;
+  line-height: auto;
+}
+
+.button-load-more {
+  font-size: 20px;
+}
+
+.main-nav a {
+  color: 626262;
+  text-transform: uppercase;
+  text-decoration: none;
 }
