@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Playfair Display', Arial, serif;
   color: #626262;
@@ -5,23 +13,84 @@ body {
   line-height: 24px;
 }
 
+.wrapper {
+  width: 901px;
+  margin: 0 auto;
+}
+
 .articles-list-item-theme {
   font-family: 'Ubuntu', Arial, sans-serif;
   color: #b4ad9e;
-  line-height: auto;
+  line-height: 17px;
+  text-transform: uppercase;
 }
 
 .articles-list-item-heading {
   font-size: 30px;
-  line-height: auto;
+  line-height: 36px;
 }
 
 .button-load-more {
   font-size: 20px;
+  line-height: 24px;
 }
 
-.main-nav a {
-  color: 626262;
+.main-nav-link {
+  color: #626262;
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.main-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.articles-list {
+  list-style: none;
+}
+
+.main-nav a:hover {
+  color: #8ecef8;
+}
+
+.main-nav-list li {
+  display: inline-block;
+}
+
+.main-nav-list li:last-child {
+  margin-right: 0;
+}
+
+.main-nav-list-item-1 {
+  margin-right: 122px;
+}
+
+.main-nav-list-item-2 {
+  margin-right: 103px;
+}
+
+.main-nav-list-item-3 {
+  margin-right: 95px;
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
