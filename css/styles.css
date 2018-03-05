@@ -18,6 +18,12 @@ body {
   margin: 0 auto;
 }
 
+.main-nav-list {
+  /*width: 901px;*/
+  text-align: center;
+  font-size: 0;
+ }
+
 .articles-list-item-theme {
   font-family: 'Ubuntu', Arial, sans-serif;
   color: #b4ad9e;
@@ -51,7 +57,8 @@ body {
   list-style: none;
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.main-nav a:focus {
   color: #8ecef8;
 }
 
@@ -75,6 +82,26 @@ body {
   margin-right: 95px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.articles-list {
+  margin: 0;
+  padding: 0;
+}
+
+.articles-list-item {
+  width: 421px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.articles-list-item:nth-child(2n) {
+  margin-right: 0;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
