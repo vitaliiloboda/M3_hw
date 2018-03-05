@@ -13,15 +13,22 @@ body {
   line-height: 24px;
 }
 
+header {
+  margin-top: 76px;
+  margin-bottom: 104px;
+}
+
 .wrapper {
   width: 901px;
   margin: 0 auto;
 }
 
 .main-nav-list {
-  /*width: 901px;*/
   text-align: center;
-  font-size: 0;
+ }
+
+ .main-nav-list a {
+   display: block;
  }
 
 .articles-list-item-theme {
@@ -29,11 +36,19 @@ body {
   color: #b4ad9e;
   line-height: 17px;
   text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 24px;
+  margin-top: 28px;
 }
 
 .articles-list-item-heading {
   font-size: 30px;
   line-height: 36px;
+  margin-bottom: 32px;
+}
+
+.articles-list-item-text {
+  font-size: 14px;
 }
 
 .button-load-more {
@@ -55,6 +70,7 @@ body {
 
 .articles-list {
   list-style: none;
+  font-size: 0;
 }
 
 .main-nav a:hover,
@@ -66,20 +82,20 @@ body {
   display: inline-block;
 }
 
-.main-nav-list li:last-child {
-  margin-right: 0;
-}
-
-.main-nav-list-item-1 {
+.main-nav-list li:first-child {
   margin-right: 122px;
 }
 
-.main-nav-list-item-2 {
+.main-nav-list li:nth-child(2) {
   margin-right: 103px;
 }
 
-.main-nav-list-item-3 {
+.main-nav-list li:nth-child(3) {
   margin-right: 95px;
+}
+
+.main-nav-list li:last-child {
+  margin-right: 0;
 }
 
 img {
@@ -94,14 +110,47 @@ img {
 }
 
 .articles-list-item {
-  width: 421px;
+  width: 420px;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 61px;
+  margin-bottom: 130px;
+}
+
+.articles-list-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .articles-list-item:nth-child(2n) {
   margin-right: 0;
 }
+
+.button-load-more {
+  display: inline-block;
+  margin-left: 356px;
+  margin-bottom: 70px;
+  margin-top: 52px;
+  padding: 22px 34px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  border-width: 1px;
+  border-color: rgb(98, 98, 98);
+  border-style: solid;
+  cursor: pointer;
+}
+
+.box {
+  border-width: 1px;
+  border-color: rgb(98, 98, 98);
+  border-style: solid;
+  position: absolute;
+  left: 507px;
+  top: 1949px;
+  width: 162px;
+  height: 58px;
+  z-index: 3;
+}
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
