@@ -139,19 +139,6 @@ img {
   cursor: pointer;
 }
 
-.box {
-  border-width: 1px;
-  border-color: rgb(98, 98, 98);
-  border-style: solid;
-  position: absolute;
-  left: 507px;
-  top: 1949px;
-  width: 162px;
-  height: 58px;
-  z-index: 3;
-}
-
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
