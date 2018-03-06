@@ -114,6 +114,7 @@ img {
   display: inline-block;
   margin-right: 61px;
   margin-bottom: 130px;
+  vertical-align: top;
 }
 
 .articles-list-item:nth-last-child(-n + 2) {
